@@ -42,8 +42,7 @@ class RMS:
         self.lbl_result=Label(self.root,text="Total Result\n[ 0 ]",font=("goudy old stye",20),bd=10,relief=RIDGE,bg="#038074", fg="white",)
         self.lbl_result.place(x=1020,y=530,width=300,height=100)
 
-        self.lbl_result=Label(self.root,text="Total Result\n[ 0 ]",font=("goudy old stye",20),bd=10,relief=RIDGE,bg="#038074", fg="white",)
-        self.lbl_result.place(x=1020,y=530,width=300,height=100)
+
 
         # footer
         footer = Label(self.root, text="SRMS-Student Result Management System",bg="#262626", fg="white", font=("goudy old style", 12)).pack(side="bottom",fill=X)
