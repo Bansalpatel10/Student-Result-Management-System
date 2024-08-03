@@ -129,7 +129,7 @@ class Course:
     def get_data(self,ev):
         self.txt_courseName.config(state='readonly')
         r=self.CourseTable.focus()
-        content=self.CourseTable.item(r)
+        content=self.CourseTable.item(r) #to show item in fills
         row=content["values"]
         self.var_course.set(row[1])
         self.var_duration.set(row[2])
