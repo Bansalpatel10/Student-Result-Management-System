@@ -14,7 +14,7 @@ class RMS:
         self.logo_dash=ImageTk.PhotoImage(file="images/logo_p.png") #add icon in header
         # title
         title = Label(self.root, text="Student Result Management System",padx=10,compound=LEFT,image=self.logo_dash,bg="#0b5377", fg="white", font=("goudy old style", 20)).place(x=0,y=0,relwidth=1,height=50) #add title in header
-
+     
         # menu
         M_Frame=LabelFrame(self.root,text="Menus",font=("times neew roman",15),bg="white")
         M_Frame.place(x=40,y=70,width=1470,height=80) #height of the menu title
