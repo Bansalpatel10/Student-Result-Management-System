@@ -1,6 +1,8 @@
 from tkinter import*
 from PIL import Image,ImageTk
 from course import Course
+from student import Student
+
 class RMS:
     def __init__(self,root):
         
@@ -20,7 +22,7 @@ class RMS:
         M_Frame.place(x=40,y=70,width=1470,height=80) #height of the menu title
 
         btn_course=Button(M_Frame,text="Course",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2",command=self.add_course).place(x=20,y=5,width=220,height=40)
-        btn_student=Button(M_Frame,text="Student",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2").place(x=260,y=5,width=220,height=40)
+        btn_student=Button(M_Frame,text="Student",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2",command=self.add_student).place(x=260,y=5,width=220,height=40)
         btn_result=Button(M_Frame,text="Result",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2").place(x=500,y=5,width=220,height=40)
         btn_view=Button(M_Frame,text="View Student Result",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2").place(x=740,y=5,width=220,height=40)
         btn_logout=Button(M_Frame,text="Logout",font=("goudy old style",15,"bold"),bg="#0b5377",fg="white",cursor="hand2").place(x=980,y=5,width=220,height=40)
@@ -50,6 +52,11 @@ class RMS:
     def add_course(self): #function for course
         self.new_win=Toplevel(self.root)
         self.new_obj=Course(self.new_win)
+
+    # Student button working
+    def add_student(self):
+        self.new_win=Toplevel(self.root)
+        self.new_obj=Student(self.new_win)
       
 if __name__=="__main__":
     root = Tk()  #tkinter object
